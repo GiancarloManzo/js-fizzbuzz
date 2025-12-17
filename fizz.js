@@ -1,6 +1,7 @@
-const numero = parseInt(prompt("Inserisci un numero"));
+const multiplo = parseInt(prompt("Inserisci un multiplo"));
+const limite = parseInt(prompt("inserisci il limite (numero > 0"));
 
-if (isNaN(numero) || numero <= 0) {
+if (isNaN(multiplo) || isNaN(limite) || multiplo <= 0 || limite <= 0) {
   throw new Error("Devi inserire un numero maggiore di 0");
 }
 
