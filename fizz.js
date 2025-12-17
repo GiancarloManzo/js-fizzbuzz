@@ -14,7 +14,20 @@ for (let i = multiplo; i <= limite; i += multiplo) {
 
   if (output === "") {
     console.log(i);
+  } else if (output === "Fizz") {
+    console.log(
+      i + " %cFizz",
+      " background: rgb(255 127 80); color: black; font-weight: bold;"
+    );
+  } else if (output === "Buzz") {
+    console.log(
+      i + " %cBuzz",
+      "background: rgb(100 149 237); color: black; font-weight: bold;"
+    );
   } else {
-    console.log(i + " " + output);
+    console.log(
+      i + " %cFizzBuzz",
+      "background: rgb(107 142 35); color: black; font-weight: bold; padding: 2px 6px;"
+    );
   }
 }
