@@ -1,5 +1,5 @@
 const multiplo = parseInt(prompt("Inserisci un multiplo"));
-const limite = parseInt(prompt("inserisci il limite (numero > 0)"));
+const limite = parseInt(prompt("Inserisci il limite (numero > 0)"));
 
 if (isNaN(multiplo) || isNaN(limite) || multiplo <= 0 || limite <= 0) {
   alert("Errore: devi inserire solo numeri maggiori di 0 ");
@@ -7,13 +7,14 @@ if (isNaN(multiplo) || isNaN(limite) || multiplo <= 0 || limite <= 0) {
 }
 
 for (let i = multiplo; i <= limite; i += multiplo) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log(i + " FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log(i + " Fizz");
-  } else if (i % 5 === 0) {
-    console.log(i + " Buzz");
-  } else {
+  let output = "";
+
+  if (i % 3 === 0) output += "Fizz";
+  if (i % 5 === 0) output += "Buzz";
+
+  if (output === "") {
     console.log(i);
+  } else {
+    console.log(i + " " + output);
   }
 }
