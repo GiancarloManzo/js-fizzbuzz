@@ -8,11 +8,11 @@ if (isNaN(multiplo) || isNaN(limite) || multiplo <= 0 || limite <= 0) {
 
 for (let i = multiplo; i <= limite; i += multiplo) {
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
+    console.log(i + " FizzBuzz");
   } else if (i % 3 === 0) {
-    console.log("Fizz");
+    console.log(i + " Fizz");
   } else if (i % 5 === 0) {
-    console.log("Buzz");
+    console.log(i + " Buzz");
   } else {
     console.log(i);
   }
