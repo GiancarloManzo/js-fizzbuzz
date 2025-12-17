@@ -5,7 +5,7 @@ if (isNaN(multiplo) || isNaN(limite) || multiplo <= 0 || limite <= 0) {
   throw new Error("Devi inserire un numero maggiore di 0");
 }
 
-for (let i = multiplo; i <= limite; i++) {
+for (let i = multiplo; i <= limite; i += multiplo) {
   if (i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
   } else if (i % 3 === 0) {
